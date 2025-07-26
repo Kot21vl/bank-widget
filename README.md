@@ -5,6 +5,12 @@
 
 ## Установка
 ```bash
-git clone <ссылка на репозиторий>
-cd <папка>
+git clone https://github.com/Kot21vl/bank-widget
+cd bank-wiget
 poetry install
+
+## Тестирование
+
+Для запуска тестов используйте:
+```bash
+pytest --cov=src --cov-report=html

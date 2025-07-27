@@ -1,5 +1,6 @@
 from src.processing import filter_by_state, sort_by_date
 
+
 # Тест для filter_by_state
 def test_filter_by_state():
     data = [
@@ -12,6 +13,7 @@ def test_filter_by_state():
         {'id': 1, 'state': 'EXECUTED'},
         {'id': 3, 'state': 'EXECUTED'}
     ]
+
 
 # Тест для sort_by_date
 def test_sort_by_date():

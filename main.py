@@ -1,6 +1,7 @@
-from src.masks import get_mask_card_number, get_mask_account
-from src.processing import filter_by_state, sort_by_date
-
+from src.masks import get_mask_account
+from src.masks import get_mask_card_number
+from src.processing import filter_by_state
+from src.processing import sort_by_date
 
 if __name__ == "__main__":
     # Пример номера карты и счёта

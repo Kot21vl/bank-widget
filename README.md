@@ -33,3 +33,22 @@ print(next(usd_ops))
 
 for description in transaction_descriptions(transactions):
     print(description)
+
+## Новый функционал
+
+### Декоратор `log`
+Добавлен модуль `decorators` с декоратором `log`, который позволяет логировать выполнение функций.
+
+- **Поддержка логирования в консоль или в файл** — при передаче аргумента `filename` логи пишутся в файл, иначе выводятся в консоль.
+- **Фиксируются**: имя функции, переданные аргументы, результат выполнения, а также ошибки (с типом и входными параметрами).
+- **Пример использования**:
+```python
+from decorators import log
+
+@log()
+def add(a, b):
+    return a + b
+
+@log("log.txt")
+def divide(a, b):
+    return a / b

@@ -1,4 +1,6 @@
-from typing import List, Dict, Any
+from typing import Any
+from typing import Dict
+from typing import List
 
 
 def sort_by_date(data: List[Dict[str, Any]], descending: bool = True) -> List[Dict[str, Any]]:
